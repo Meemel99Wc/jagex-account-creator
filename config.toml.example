@@ -1,0 +1,42 @@
+[default]
+accounts_to_create = 1
+threads = 1
+log_level = "INFO"
+
+[browser]
+headless = false
+enable_dev_tools = false
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+element_wait_timeout = 30
+cache_update_threshold = 0.3
+
+[email]
+use_imap = false
+use_guerrilla_mail = true
+
+[email.guerrilla_mail]
+use_proxy = true
+domains = [
+    "sharklasers.com",
+    "guerrillamail.info",
+    "grr.la",
+    "guerrillamail.biz",
+    "guerrillamail.com",
+]
+
+[email.imap]
+ip = "mail.domain.com"
+port = 993
+email = "catchall@domain.com"
+password = "yourPassword"
+domains = ["yourdomain.com"]
+
+[account]
+password = "YourStrongPassword!123"
+set_2fa = true
+
+[proxies]
+enabled = false
+list = [
+    # { ip = "proxy.ip", port = "8080", username = "user", password = "pass"},
+]

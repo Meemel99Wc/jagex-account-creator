@@ -1,0 +1,7 @@
+target/
+logs/
+*.log
+accounts.json
+config.toml
+.idea/workspace.xml
+*.iml
